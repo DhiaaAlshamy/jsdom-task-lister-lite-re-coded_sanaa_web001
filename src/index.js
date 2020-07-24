@@ -57,12 +57,6 @@ function deleteItem(element){
   //   //  newTasks.push(element);
   //   }
   // });
-  return newTasks;
- }
-=======
-=======
-  delete element.parentElement;
-}
->>>>>>> 1d3fbad0693eb6430687ca31fb6b603943b1e945
->>>>>>> 38e3ed59cf9db7c15550cb659a439d33eed138e6
+ // return newTasks;
+ //}
 
