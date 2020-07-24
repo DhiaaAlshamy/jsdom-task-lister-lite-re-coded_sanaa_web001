@@ -18,7 +18,11 @@ function addTasks(){
    let taskDeleteBtn=document.createElement("button");
    taskDeleteBtn.textContent="Delete Task";
    taskText.textContent=txt;
+<<<<<<< HEAD
    taskDeleteBtn.addEventListener("click",deleteItem)
+=======
+   taskDeleteBtn.addEventListener("click",deleteItem(taskDeleteBtn))
+>>>>>>> 1d3fbad0693eb6430687ca31fb6b603943b1e945
    taskText.appendChild(taskDeleteBtn);
    task.className="task-item";
    task.id=`${txt}`;
@@ -29,9 +33,11 @@ function addTasks(){
  // document.getElementByName("deletebtn").addEventListener("click",deleteItem);
 }
 function deleteItem(element){
+<<<<<<< HEAD
   
    element.toElement.parentElement.parentElement.remove();
  }
+<<<<<<< HEAD
 //  function sortTasks(tasks){
 //    console.log(tasks);
 //    let newTasks;
@@ -55,4 +61,10 @@ function deleteItem(element){
   // });
   return newTasks;
  }
+=======
+=======
+  delete element.parentElement;
+}
+>>>>>>> 1d3fbad0693eb6430687ca31fb6b603943b1e945
+>>>>>>> 38e3ed59cf9db7c15550cb659a439d33eed138e6
 
