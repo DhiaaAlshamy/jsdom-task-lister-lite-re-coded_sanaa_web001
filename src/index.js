@@ -11,8 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
 function addTasks(){
   
    let txt= document.getElementById("new-task-description").value;
+   let priority=document.getElementById("periority").value;
    let task=document.createElement("li");
    let taskText=document.createElement("p");
+   taskText.style.color=priority;
    let taskDeleteBtn=document.createElement("button");
    taskDeleteBtn.textContent="Delete Task";
    taskText.textContent=txt;
@@ -23,10 +25,34 @@ function addTasks(){
   // taskText.innerHTML=`${txt}`;
    task.appendChild(taskText)
    document.getElementById("tasks").appendChild(task);
+ //  document.getElementById("tasks").children=sortTasks(document.getElementById("tasks").children);
  // document.getElementByName("deletebtn").addEventListener("click",deleteItem);
 }
 function deleteItem(element){
   
    element.toElement.parentElement.parentElement.remove();
+ }
+//  function sortTasks(tasks){
+//    console.log(tasks);
+//    let newTasks;
+
+//   array.forEach(element => {
+    
+//   });
+  //   if(element.p.color=="red"){
+  //     //newTasks.push(element);
+  //   }
+  // });
+  // tasks.forEach(element => {
+  //   if(element.p.color=="yellow"){
+  //    // newTasks.push(element);
+  //   }
+  // });
+  // tasks.forEach(element => {
+  //   if(element.p.color=="green"){
+  //   //  newTasks.push(element);
+  //   }
+  // });
+  return newTasks;
  }
 
