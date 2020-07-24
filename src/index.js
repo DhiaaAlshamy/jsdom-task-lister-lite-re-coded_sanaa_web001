@@ -18,7 +18,10 @@ function addTasks(){
    let taskDeleteBtn=document.createElement("button");
    taskDeleteBtn.textContent="Delete Task";
    taskText.textContent=txt;
+
    taskDeleteBtn.addEventListener("click",deleteItem)
+
+  
    taskText.appendChild(taskDeleteBtn);
    task.className="task-item";
    task.id=`${txt}`;
@@ -32,6 +35,7 @@ function deleteItem(element){
   
    element.toElement.parentElement.parentElement.remove();
  }
+
 //  function sortTasks(tasks){
 //    console.log(tasks);
 //    let newTasks;
@@ -53,6 +57,6 @@ function deleteItem(element){
   //   //  newTasks.push(element);
   //   }
   // });
-  return newTasks;
- }
+ // return newTasks;
+ //}
 
